@@ -1,0 +1,77 @@
+body {
+    background-image: url(../img/36128.png);
+    background-size: cover;
+}
+
+canvas {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'OceanRush';
+    src: url('../fonts/OceanRush.otf');
+}
+
+.instructions {
+    max-width: 17vw;
+    width: 17vw;
+    margin: 0;
+    font-family: "OceanRush";
+    font-size: 14px;
+    color: #643421;
+}
+
+.instructions h3, .instructions ol {
+    margin: 16px 8px !important;
+    padding: 0 !important;
+}
+
+.instructions h3 {
+    font-size: x-large;
+}
+
+.instructions p {
+    margin: 0;
+    padding: 0;
+}
+
+.instructions ol {
+    list-style-type: disc;
+}
+
+.instructions li {
+    margin: 16px 12px;
+}
+
+.drop {
+    background: #643421;
+    background: -moz-linear-gradient(top, rgba(13, 52, 58, 1) 0%, rgba(255, 255, 255, 0.6) 100%);
+    width: 1px;
+    height: 89px;
+    position: absolute;
+    bottom: 200px;
+    animation: fall .63s linear infinite;
+    z-index: 9999;
+}
+
+@keyframes fall {
+    to {
+        margin-top: 900px;
+    }
+}
+
+#rain {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
